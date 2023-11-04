@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Contact Form</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="bg-gray-500">
+    <nav class="w-full px-8 bg-purple-700 text-white py-4">
+      <div class="container mx-auto flex items-center justify-between">
+        <a href="portfolio.html" class="flex items-center">
+          <img
+            class="rounded-full h-12 w-12 mr-2"
+            src="https://cdn.pixabay.com/photo/2014/04/02/17/07/user-307993_1280.png"
+            alt="profile-image" />
+          <h1 class="text-2xl font-bold">Sophia Johnson</h1>
+        </a>
+        <ul class="md:flex flex space-x-8 hidden text-xl font-semibold">
+          <li>
+            <a href="#" class="text-xl font-semibold hover:underline"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-xl font-semibold hover:underline"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-xl font-semibold hover:underline">Resume</a>
+          </li>
+          <li>
+            <a
+              href="contact-us.html"
+              class="text-xl font-semibold hover:underline"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="md:hidden">
+          <a class="text-4xl font-semibold" href="#">&#8801;</a>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="container mx-auto mt-14 p-6 bg-white rounded shadow-md max-w-md">
+      <h2 class="text-2xl font-bold mb-4">Contact Form</h2>
+      <form action="#" method="POST">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-bold mb-2"
+            >Name</label
+          >
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="w-full py-2 px-3 border border-gray-300 rounded focus:outline-none focus:shadow-outline"
+            required />
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-bold mb-2"
+            >Email</label
+          >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="w-full py-2 px-3 border border-gray-300 rounded focus:outline-none focus:shadow-outline"
+            required />
+        </div>
+        <button
+          type="submit"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
 </html>
